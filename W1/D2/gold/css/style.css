@@ -70,25 +70,31 @@ a {
     width: 80%;
     display: grid;
     height: min-content;
-    grid-template-columns: 1fr auto;
+    gap: 2rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 
 /* contains CV sections */
 
 .main-container-items {
+    margin-top: 2em;
     background-color: var(--main-teriatary-bg-color);
     border-left: 2px solid var(--main-secondary-color);
-    width: 85%;
 }
 
 .sub-container {
-    width: 80%;
-    margin: 2em;
     display: grid;
-    width: minmax(150px, 300px);
+    justify-content: center;
+    gap: 2rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 80%));
+    width: fit-content;
+    display: grid;
 }
 
-.sub-container-items {
-    width: fit-content;
+.sub-container-item {
+    border-radius: 4px;
+    border-bottom: 2px solid var(--main-primary-color);
 }
+
+.skills-grid {}
