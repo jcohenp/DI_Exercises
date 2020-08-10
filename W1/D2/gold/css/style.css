@@ -54,7 +54,7 @@ a {
 
 .main-container-grid {
     margin-top: 20em;
-    width: 80;
+    width: 80%;
     display: grid;
     justify-content: center;
     justify-items: normal;
