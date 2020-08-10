@@ -16,14 +16,17 @@ main {
     margin: 0;
 }
 
+head {
+    height: 6em;
+    position: top;
+    width: 100%;
+}
+
 .header-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    position: fixed;
-    height: 6em;
     padding: 1em 0px;
-    width: 100%;
     color: var(--main-primary-color);
     background-color: var(--main-secondary-bg-color);
     border-bottom: 3px solid var(--main-secondary-color);
@@ -41,19 +44,25 @@ a {
     font-weight: lighter;
 }
 
+
+/* displays contact information below haeder */
+
 .contact-bar {
     display: flex;
     flex-wrap: wrap;
-    position: fixed;
     vertical-align: middle;
-    margin-top: 8em;
     width: 100%;
     height: fit-content;
     background-color: var(--main-teriatary-bg-color);
+    box-shadow: 0px 4px 16px var(--main-teriatary-bg-color);
 }
 
+
+/* contains all the CV items */
+
 .main-container-grid {
-    margin-top: 20em;
+    text-align: center;
+    position: initial;
     width: 80%;
     display: grid;
     justify-content: center;
@@ -62,7 +71,15 @@ a {
     grid-template-columns: 1fr auto;
 }
 
+
+/* contains CV sections */
+
 .main-container-items {
     background-color: var(--main-teriatary-bg-color);
     border-left: 2px solid var(--main-secondary-color);
+    width: 85%;
+}
+
+.sub-container {
+    width: minmax(150px, 300px);
 }
