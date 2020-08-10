@@ -1,0 +1,91 @@
+:root {
+    --main-color: #ffffff;
+    --main-bg-color: #000000;
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+html, body, main {
+    background-color: var(--main-bg-color);
+    margin: 0px;
+}
+
+nav {
+    position: fixed;
+    display: inline-flex;
+    vertical-align: middle;
+    width: 100%;
+    height: 4rem;
+    background-image: 
+        radial-gradient(circle,rgba(0,0,0,0), var(--main-bg-color) 80%),
+        url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b9a25766-c928-456b-8454-f5cd757da282/d4ymk6t-2480a5a0-7e73-4cd7-b128-417b61ebe58f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYjlhMjU3NjYtYzkyOC00NTZiLTg0NTQtZjVjZDc1N2RhMjgyXC9kNHltazZ0LTI0ODBhNWEwLTdlNzMtNGNkNy1iMTI4LTQxN2I2MWViZTU4Zi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.B6n5RW9hxxdEomhdg3nkjsJnq71MEtVZ4qzPm0cdJcs);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+ul {
+    display: flex;
+}
+li {
+    display: inline-flex;
+    vertical-align: middle;
+    list-style: none;
+    color: var(--main-color);
+    font-weight: bolder;
+    line-height: 1.5rem;
+    padding: 0.2rem;
+}
+
+main {
+    padding: 2rem;
+}
+main > div {
+    margin-top: 3rem;
+}
+main div {
+    background-color: rgba(255,255,255,0.12);
+    color: var(--main-color);
+    padding: 1rem;
+}
+h3 {
+    display: block;
+    color: #B8860B;
+}
+
+div p {
+    margin: 1em 2em;
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+    text-decoration: none;
+    display: grid;
+    gap: 2rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.powers {
+    display: grid;
+    gap: 2rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    background-color: transparent;
+}
+
+.powers div {
+    min-width: 200px;
+    max-width: 400px;
+    max-height:fit-content;
+    background-color: rgba(25,92,17,0.2);
+}
+
+#av-logo {
+    max-width: 200px;
+    max-height: 6rem;
+    color: var(--main-color);
+    fill: var(--main-color);
+}

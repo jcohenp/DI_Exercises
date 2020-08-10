@@ -1,0 +1,19 @@
+html {
+	font-family: Arial;
+	width: 80%;
+	text-decoration: none;
+}
+
+body {
+
+}
+.flex-div {
+	display: flex;
+	font-weight: bold;
+	text-align: center;
+	justify-content: space-around;
+}
+.flex-div-content {
+	text-align: center;
+	font-weight: normal;
+}
