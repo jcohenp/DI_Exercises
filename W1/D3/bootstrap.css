@@ -1,11 +1,11 @@
-.flex-column {
-    width: 80%;
-    justify-content: space-around;
-}
-
 .bg-light,
 .navbar-toggler-icon {
     background-color: indigo !important;
+}
+
+.fab {
+    color: white;
+    background-color: white;
 }
 
 nav a,
