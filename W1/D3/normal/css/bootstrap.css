@@ -1,3 +1,11 @@
+a {
+    color: white;
+}
+
+body div div {
+    margin-top: 2em;
+}
+
 .bg-light,
 .navbar-toggler-icon {
     background-color: indigo !important;
@@ -5,14 +13,6 @@
 
 .fab {
     color: white;
-    background-color: white;
-}
-
-nav a,
-.btn-outline-success {
-    color: white !important;
-    background-color: indigo!important;
-    border-color: white !important;
 }
 
 .btn-outline-success:hover,
@@ -22,8 +22,11 @@ nav a,
     border-color: #fff !important;
 }
 
-a {
-    color: white;
+nav a,
+.btn-outline-success {
+    color: white !important;
+    background-color: indigo!important;
+    border-color: white !important;
 }
 
 .page-footer,
