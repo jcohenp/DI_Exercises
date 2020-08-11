@@ -1,0 +1,34 @@
+.flex-column {
+    width: 80%;
+    justify-content: space-around;
+}
+
+.bg-light,
+.navbar-toggler-icon {
+    background-color: indigo !important;
+}
+
+nav a,
+.btn-outline-success {
+    color: white !important;
+    background-color: indigo!important;
+    border-color: white !important;
+}
+
+.btn-outline-success:hover,
+.btn-success:hover {
+    color: indigo!important;
+    background-color: #fff!important;
+    border-color: #fff !important;
+}
+
+a {
+    color: white;
+}
+
+.page-footer,
+a:hover,
+.mb-5 flex-center {
+    color: white;
+    background-color: indigo;
+}
