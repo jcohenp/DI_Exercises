@@ -11,4 +11,7 @@ h1 {
     color: white;
 }
 
-.wrapper {}
+.wrapper {
+    display: grid;
+    grid-area: ;
+}
