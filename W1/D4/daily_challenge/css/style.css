@@ -1,0 +1,42 @@
+* {
+    text-align: center;
+}
+
+html {
+    background: #100e17;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(175px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 2em;
+}
+
+.grid-item-card {
+    border-radius: 25px;
+    height: 15em;
+    background-color: #211c33;
+    box-shadow: -8px -8px 16px rgba(255, 255, 255, .7), 8px 8px 16px (0, 0, 0, 0.7);
+}
+
+.grid-item-card:hover {
+    background: radial-gradient( #ff880096, rgba(0, 0, 0, 0));
+    transition-duration: 0.5s;
+    color: transparent;
+}
+
+.grid-item-card iframe {
+    width: 80%;
+    height: 10em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba (0, 0, 0, .7);
+}
