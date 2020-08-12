@@ -1,0 +1,20 @@
+.pattern-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(50px);
+    grid-template-rows: repeat(50px);
+    grid-auto-flow: row;
+    grid-gap: 0.2em;
+}
+
+.color1 {
+    background-color: orange;
+}
+
+.color2 {
+    background-color: burlywood;
+}
+
+.color3 {
+    background-color: brown;
+}
