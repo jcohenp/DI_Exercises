@@ -98,4 +98,6 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(50px, 80%));
 }
 
-.skills-grid-item {}
+.skills-grid-item {
+    display: grid;
+}
