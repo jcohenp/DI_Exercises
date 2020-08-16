@@ -1,0 +1,22 @@
+* {}
+
+body {
+    background-color: black;
+    text-align: center;
+    padding: 2em;
+}
+
+body form input {
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    line-height: 2em;
+}
+
+button {
+    border-radius: 4px;
+    border: none;
+    line-height: 2em;
+    color: black;
+    background-color: orange;
+}
