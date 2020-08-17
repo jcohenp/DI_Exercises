@@ -15,5 +15,5 @@ console.log(array);
 
 var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 
-var acces = array2[1][1];
+var acces = array2[1][1][0];
 console.log(acces);
