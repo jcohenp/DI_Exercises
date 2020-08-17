@@ -30,13 +30,21 @@
 // exercise 4;
 let boom = prompt('Enter the O number in Boom');
 let n = parseInt(boom);
-let inputstr = "b" + "o".repeat(n) + "m";
-if ((n % 5) === 0) {
-    inputstr = inputstr.toUpperCase();
-    if ((n % 2) === 0) {
-        inputstr = inputstr.concat("!");
+if (n.length < 0) {
+    let inputstr = "b" + "o".repeat(n) + "m";
+    if ((n % 5) === 0) {
+        inputstr = inputstr.toUpperCase();
+        if ((n % 2) === 0) {
+            inputstr = inputstr.concat("!");
+        }
+        console.log(inputstr);
+    } else if ((n > 2) || ((n % 2) === 0)) {
+        console.log(inputstr);
+    } else {
+        console.log("Looks like you didn't put a proper n, DUMBASS!!")
     }
-    console.log(inputstr);
-} else if ((n > 2) || ((n % 2) === 0)) {
-    console.log(inputstr);
+} else {
+    console.log("You didn't enter anything")
+    let errorMsg = -1;
+    console.log("Error: " + errorMsg);
 }
