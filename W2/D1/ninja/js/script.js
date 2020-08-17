@@ -30,11 +30,12 @@
 // exercise 4;
 
 
-let n = 20
+
 
 function boomRoy(n) {
     // let boom = prompt('Enter the O number in Boom');
     // let n = parseInt(Math.round(boom));
+    let n = 20
     if (n.length != 0) {
         let inputstr = "b" + "o".repeat(n) + "m";
         if ((n % 5) === 0) {
