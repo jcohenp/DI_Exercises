@@ -1,4 +1,5 @@
-let nono = ["programming", "is", "not", "bad"];
+let nonostr = "programming is not bad";
+let nono = nonostr.split(" ");
 let firststr = nono[nono.indexOf("not")];
 if (nono[nono.indexOf("not") + 1] === "bad") {
     delete nono[nono.indexOf("not") + 1];
