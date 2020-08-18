@@ -21,10 +21,16 @@
 //     console.log(names[indexInNames].charAt(0));
 // }
 
-// Exercise 3;
+// // Exercise 3;
 
-let number = prompt('enter a number!');
-number = parseInt(number);
-for (i = 0;) {
-
-}
+// // execute once no matter what the answer and then again untl the entered number is larger than 10
+// do {
+//     number = prompt('enter a number!');
+//     parseInt(number);
+//     console.log(number)
+// }
+// while (number < 10) {
+//     number = prompt('enter a number!');
+//     parseInt(number);
+//     console.log(number)
+// }

@@ -38,20 +38,22 @@
 
 // Exercise 3;
 
-let grade = 69;
-if ((grade >= 0) && (grade < 100)) {
-    if (grade >= 90) {
-        console.log("Your Grade is A");
-    } else if (grade >= 80) {
-        console.log("Your Grade is B");
-    } else if (grade >= 70) {
-        console.log("Your Grade is C");
-    } else if (grade >= 60) {
-        console.log("Your Grade is D");
-    }
-} else {
-    console.log("Error");
-}
+// let grade = 69;
+// if ((grade >= 0) && (grade < 100)) {
+//     if (grade >= 90) {
+//         console.log("Your Grade is A");
+//     } else if (grade >= 80) {
+//         console.log("Your Grade is B");
+//     } else if (grade >= 70) {
+//         console.log("Your Grade is C");
+//     } else if (grade >= 60) {
+//         console.log("Your Grade is D");
+//     } else if (grade < 60) {
+//         console.log("Your Grade is F");
+//     }
+// } else {
+//     console.log("Error");
+// }
 
 // Exercise 4;
 // A valid zip code is as follows:
@@ -62,6 +64,6 @@ if ((grade >= 0) && (grade < 100)) {
 // Must not be greater than 5 digits in length.
 
 // let zip = 65454;
-// let zipPrompt = prompt("Write your code here");
-// pattern = /^\d{5}$/;
-// console.log(pattern.test(zipPrompt));
+let zipPrompt = prompt("Write your code here");
+pattern = /^\d{5}$/;
+console.log(pattern.test(zipPrompt));
