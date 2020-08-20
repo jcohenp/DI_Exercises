@@ -21,6 +21,7 @@
   
   .calculator {
       display: grid;
+      margin: auto;
       min-width: 150px;
       max-width: 450px;
       grid-template-areas: "display display display" "operator-button-area button-area button-area";
