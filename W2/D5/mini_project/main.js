@@ -1,6 +1,6 @@
 let equation = "0";
 let calcDisplay = document.getElementById("display");
-let operators = ["+", "-", "/", "*", "."];
+let operators = ["+", "-", "/", "*", ".", "(", ")"];
 calcDisplay.innerHTML = (equation);
 
 function my_f(numInput) {
