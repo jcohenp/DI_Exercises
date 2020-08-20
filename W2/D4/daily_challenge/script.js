@@ -1,5 +1,6 @@
 ///chose to use this for testing instead of the prompts..
 let InputStatement = "Cool,that,it,workss";
+// let InputStatement = ["Cool", "that", "it", "workss"];
 
 const promptUserAndReturnSplicedArray = () => {
     InputStatement = prompt("Please enter a sentence or phrase separated by commas)");
@@ -53,7 +54,7 @@ const formatFrame = (array) => {
     //reset lineLogged
     lineLogged = [];
 
-    for (let element in array) {
+    for (let element of array) {
         linelogged = lineLogged.push("* ", array[element]);
         // get the space to the end of frame 
         let rightSpaceLength = findAndReturnLongestinArray(array) - array[element].length;
