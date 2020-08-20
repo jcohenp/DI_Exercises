@@ -23,7 +23,7 @@ function my_f(numInput) {
     } else if (numInput == "reset") {
         equation = "0";
         calcDisplay.innerHTML = (equation);
-    } else if (((numInput > 0) && (numInput < 10)) || (operators.includes(numInput) == true)) {
+    } else if (((numInput >= 0) && (numInput < 10)) || (operators.includes(numInput) == true)) {
         equation = equation + numInput;
         calcDisplay.innerHTML = (equation);
     }
