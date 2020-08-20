@@ -54,6 +54,8 @@
   
   #display {
       grid-area: display;
+      padding: 0.5em;
+      margin: 0.5em;
       height: 2.5em;
       line-height: 2em;
       border: 0.5px solid;
