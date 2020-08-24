@@ -23,7 +23,7 @@ bookshelf.style.width = "60%";
 bookshelf.style.display = "flex";
 
 console.log(bodyTag)
-bodyTag.appendChild(bookshelf);
+bodyTag.prepend(bookshelf);
 let book = document.createElement("div");
 
 
