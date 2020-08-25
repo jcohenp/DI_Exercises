@@ -32,18 +32,14 @@ function createForm() {
 
     let button = document.createElement("button");
     button.innerHTML = "+ Add";
-    inputForm.appendChild(button);
     styleAll(button);
     button.style.backgroundColor = "green";
     button.style.color = "white";
-
-    button.addEventListener("click", function addItem(itemValue) {
-        if (itemValue != null) {
-            console.log("item " + itemValue);
-            createListItem(itemValue);
-        }
+    button.addEventListener('click', (event) => {
+        console.log("C")
+        addItem(itemValue);
     });
-
+    inputForm.appendChild(button);
 
 
 
@@ -55,12 +51,19 @@ function createForm() {
     buttonClear.style.color = "black";
 }
 
+function addItem(itemValue) {
+    if (itemValue != null) {
+        console.log("item " + itemValue);
+        createListItem(itemValue);
+    }
+}
+
 function createListItem(itemValue) {
     parent = document.getElementById("root");
     let newItem = document.createElement("div");
     newItem.innerHTML = itemValue;
     newItem.style.color = "white"
-    console.log("Itemcreate " + itemValue);
+    console.log("ItemCreate " + itemValue);
     console.log("createListItem " + newItem);
     styleAll(newItem);
     parent.appendChild(newItem);
