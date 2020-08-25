@@ -53,8 +53,7 @@ function createForm() {
 
     function addItem() {
         if (keyup === "Enter") {
-            inputForm.preventDefault()
-            createListItem()
+            createListItem
         }
     }
 

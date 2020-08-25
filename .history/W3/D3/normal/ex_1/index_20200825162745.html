@@ -1,0 +1,2 @@
+<div id="box-div" class="box" draggable="true"></div>
+var box = document.querySelector("#box-div"); box.addEventListener("drag", function (event) { box.style.left = event.clientX + "px"; box.style.top = event.clientY + "px"; console.log("drag" + event.clientX + " " + event.clientY); });
