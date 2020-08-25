@@ -49,14 +49,8 @@ function createForm() {
     buttonClear.style.color = "black";
 
     button.addEventListener('click', createListItem)
-    formField.addEventListener('keyup', addItem)
+    formField.addEventListener('keyup', createListItem)
 
-    function addItem() {
-        if (keyup === "Enter") {
-            inputForm.preventDefault()
-            createListItem()
-        }
-    }
 
     function createListItem() {
         parent = document.getElementById("root");

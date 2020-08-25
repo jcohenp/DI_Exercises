@@ -25,7 +25,7 @@ function createForm() {
     styleAll(formField);
     formField.type = "text";
     formField.placeholder = "Enter what you want to buy";
-
+    formField.value = "hello123"
     formField.name = "formField";
     let itemValue = formField.value;
     inputForm.appendChild(formField);
@@ -49,31 +49,24 @@ function createForm() {
     buttonClear.style.color = "black";
 
     button.addEventListener('click', createListItem)
-    formField.addEventListener('keyup', addItem)
+    formField.addEventListener('keyup', createListItem
 
-    function addItem() {
-        if (keyup === "Enter") {
-            inputForm.preventDefault()
-            createListItem()
+
+        function createListItem() {
+            parent = document.getElementById("root");
+            let newItem = document.createElement("div");
+            styleAll(newItem);
+            console.log(itemValue);
+            newItem.innerHTML = itemValue;
+            newItem.style.color = "white";
+            console.log("ItemCreate " + itemValue);
+            console.log("createListItem " + newItem);
+            parent.appendChild(newItem);
         }
     }
 
-    function createListItem() {
-        parent = document.getElementById("root");
-        let newItem = document.createElement("div");
-        styleAll(newItem);
-        console.log(itemValue);
-        newItem.innerHTML = itemValue;
-        newItem.style.color = "white";
-        console.log("ItemCreate " + itemValue);
-        console.log("createListItem " + newItem);
-        parent.appendChild(newItem);
-    }
-    console.log(itemValue)
-}
 
 
 
 
-
-createForm();
+    createForm();
