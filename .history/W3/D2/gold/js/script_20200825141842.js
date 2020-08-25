@@ -12,7 +12,7 @@ function styleAll(element) {
     element.style.margin = "1em"
     element.style.textAlign = "center";
     element.style.fontWeight = "bold"
-    element.style.fontSize = "1.2em"
+    element.style.fontSize = "1.2em";
 
 }
 
@@ -22,53 +22,51 @@ function createForm() {
     root.appendChild(inputForm);
 
     let formField = document.createElement("input");
+    styleAll(formField);
     formField.type = "text";
     formField.placeholder = "Enter what you want to buy";
-    // formField.value = "hello123"
+    formField.value = "hello123"
     formField.name = "formField";
     let itemValue = formField.value;
     inputForm.appendChild(formField);
-    styleAll(formField);
 
     let button = document.createElement("button");
-    button.innerHTML = "+ Add";
     styleAll(button);
+    button.innerHTML = "+ Add";
+    button.id = ("addButton");
     button.style.backgroundColor = "green";
     button.style.color = "white";
-    button.addEventListener('click', (event) => {
-        console.log("C")
-        addItem(itemValue);
-    });
     inputForm.appendChild(button);
 
 
 
+
     let buttonClear = document.createElement("button");
+    styleAll(buttonClear);
     buttonClear.innerHTML = "CLEAR ALL";
     inputForm.appendChild(buttonClear);
-    styleAll(buttonClear);
     buttonClear.style.backgroundColor = "yellow";
     buttonClear.style.color = "black";
-}
 
-function addItem(itemValue) {
-    if (itemValue != null) {
-        console.log("item " + itemValue);
-        createListItem(itemValue);
+    button.addEventListener('click', createListItem)
+        // formField.addEventListener('keypress', createListItem
+
+
+    function createListItem() {
+        parent = document.getElementById("root");
+        let newItem = document.createElement("div");
+        styleAll(newItem);
+        console.log(itemValue);
+        newItem.innerHTML = itemValue;
+        newItem.style.color = "white";
+        console.log("ItemCreate " + itemValue);
+        console.log("createListItem " + newItem);
+        parent.appendChild(newItem);
     }
 }
 
-function createListItem(itemValue) {
-    parent = document.getElementById("root");
-    let newItem = document.createElement("div");
-    newItem.innerHTML = itemValue;
-    newItem.style.color = "white"
-    console.log("ItemCreate " + itemValue);
-    console.log("createListItem " + newItem);
-    styleAll(newItem);
-    parent.appendChild(newItem);
-}
 
 
 
-createForm()
+
+createForm();
