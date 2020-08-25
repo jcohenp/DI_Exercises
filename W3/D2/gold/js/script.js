@@ -23,15 +23,10 @@ function createForm() {
 
     let formField = document.createElement("input");
     formField.type = "text";
-    formField.value = "Enter what you want to buy";
+    formField.placeholder = "Enter what you want to buy";
+    // formField.value = "hello123"
     formField.name = "formField";
     let itemValue = formField.value;
-    formField.addEventListener("click", function(itemValue) {
-        console.log(itemValue)
-        formField.value = "";
-
-        return
-    });
     inputForm.appendChild(formField);
     styleAll(formField);
 
@@ -41,7 +36,16 @@ function createForm() {
     styleAll(button);
     button.style.backgroundColor = "green";
     button.style.color = "white";
-    button.addEventListener("click", addItem(itemValue));
+
+    button.addEventListener("click", function addItem(itemValue) {
+        if (itemValue != null) {
+            console.log("item " + itemValue);
+            createListItem(itemValue);
+        }
+    });
+
+
+
 
     let buttonClear = document.createElement("button");
     buttonClear.innerHTML = "CLEAR ALL";
@@ -51,18 +55,17 @@ function createForm() {
     buttonClear.style.color = "black";
 }
 
-function createListItem(itemValue, itemAmount) {
+function createListItem(itemValue) {
+    parent = document.getElementById("root");
     let newItem = document.createElement("div");
     newItem.innerHTML = itemValue;
+    newItem.style.color = "white"
+    console.log("Itemcreate " + itemValue);
+    console.log("createListItem " + newItem);
     styleAll(newItem);
-    root.appendChild(newItem);
+    parent.appendChild(newItem);
 }
 
-function addItem(itemValue) {
-    if ((itemValue != null) && (itemValue != "Enter what you want to buy")) {
-        console.log(itemValue);
-        createListItem(itemValue);
-    }
-}
+
 
 createForm()
