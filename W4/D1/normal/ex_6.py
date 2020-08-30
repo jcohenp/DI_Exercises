@@ -6,7 +6,7 @@ user_height_minimum = 35
 user_height_unit = "inch"
 
 if user_height_unit == "inch":
-    if get_user_height <= 35:
+    if get_user_height >= 35:
         print("Enjoy your ride!\n")
     else: print("Sorry, too small! get out of here!")
 else:

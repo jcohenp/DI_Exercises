@@ -1,5 +1,5 @@
 {
-   "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3",
+//    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3",
     "code-runner.executorMapByFileExtension": {
 
         ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
@@ -30,7 +30,7 @@
         ".vsh": "v run",
         ".sass": "sass --style expanded",
         ".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        // ".python": "python3 -u",
+        ".python": "python3",
         // ".py": "python3",
     }
 }
