@@ -1,3 +1,8 @@
+# Print the following output in one line of code:
 
-for x in range(4):
-    print("Hello world")
+# Hello world
+# Hello world
+# Hello world
+# Hello world
+
+print("Hello world\n"*4)
