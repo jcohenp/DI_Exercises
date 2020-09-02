@@ -35,7 +35,7 @@ def set_encryption(encryption = 3):
 
 def set_shift_method(input_str):
     """""""""""
-        Set direction. Asks user for shiftdirection argument for apply_shift function
+        Set direction. Asks user for shiftdirection argument for apply_shift function and returns direction
     """""""""""
     shiftdirection = str(input("Enter 'e' for encryption, 'd' for decryption\n"))
     if shiftdirection == "e" or shiftdirection == "d":
