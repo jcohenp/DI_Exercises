@@ -1,0 +1,49 @@
+.wrapper-container {
+    display: grid;
+    grid-gap: 1em;
+}
+
+.wrapper1 {
+    height: 33vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.wrapper2 {
+    height: 33vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1em;
+}
+
+.wrapper3 {
+    height: 33vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.grid-item {
+    border: 1px solid black;
+}
+
+.color1 {
+    background-color: red;
+}
+
+.color2 {
+    background-color: blue;
+}
+
+.color3 {
+    background-color: green;
+}
+
+.color4 {
+    background-color: indigo;
+}
+
+.color5 {
+    background-color: yellow;
+}

@@ -1,0 +1,24 @@
+.pattern-wrapper {
+    margin: 0 auto;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1em);
+    grid-gap: 0.2em;
+}
+
+.grid-item {
+    width: 1em;
+    height: 1em;
+}
+
+.color1 {
+    background-color: orange;
+}
+
+.color2 {
+    background-color: burlywood;
+}
+
+.color3 {
+    background-color: brown;
+}

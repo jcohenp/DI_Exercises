@@ -1,6 +1,6 @@
 def get_input_for_decrypt():
     """""""""""
-        get user input from user for en/decryption
+        get user input from user for en/decryption returns output
     """""""""""
     input_str = str(input("Enter a text to encrypt, or decrypt!\n"))
     output = apply_shift(input_str, set_encryption(), set_shift_method(input_str))
@@ -21,8 +21,8 @@ def apply_shift(input_str, encryption = 3, shiftdirection = "e"):
     # encypher/decypher
     for step in shiftdirection:
         for letter in input_str:
-            encypher = ord(letter) + step
-            decypher = chr(encypher)
+            encypher = (ord(letter) + step-65) % 26 + 65
+            decypher = chr(encypher) 
             output.append(decypher)
         return ''.join(output)
 
@@ -43,7 +43,6 @@ def set_shift_method(input_str):
     else:
         print("you didn't say if you want to en- or decrypt")
         set_shift_method(input_str)
-
 
 def main():
     text = get_input_for_decrypt()

@@ -1,0 +1,101 @@
+* {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://uicookies.com/demo/theme/frame/img/image_1.jpg");
+    background-size: cover;
+    text-transform: uppercase;
+    background-color: transparent!important;
+    color: white;
+    font-size: 1em;
+}
+
+div ul li a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+div ul li a:hover {
+    padding: 0.5em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+h3,
+p {
+    color: rgba(25, 87, 165, 1.00);
+    font-style: normal;
+}
+
+p {
+    color: #73767c;
+}
+
+.centercontainer {
+    text-align: center;
+    padding: 2em 4em;
+}
+
+.btn {
+    font-size: 0.8em;
+    box-sizing: padding-box;
+    border-radius: 0;
+    color: white;
+    padding: 1em 1.5em;
+    margin: 1em;
+    min-width: 12em;
+}
+
+.btn-primary {
+    background-color: #103463;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+.btn-link {
+    padding: calc(1em - 2px);
+    box-sizing: border-box;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    margin-top: 3em;
+    flex-wrap: wrap;
+}
+
+.col {
+    float: left;
+    padding: 30px;
+    margin: 30px;
+    min-width: 250px;
+    width: 100%;
+    line-height: 1.7;
+}
+
+.bi {
+    color: rgba(25, 87, 165, 1.00);
+    font-size: 7em;
+    padding: 20px 0 20px 0;
+    line-height: 5em;
+}
+
+.lrn-more {
+    font-size: 1em;
+}
+
+.bi-chevron-compact-right {
+    font-size: 1em;
+    padding: 0px!important;
+}
