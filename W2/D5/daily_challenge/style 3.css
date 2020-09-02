@@ -1,0 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body,
+.container {
+    margin: 0;
+}
+
+.beerLine {
+    text-align: center;
+    padding: 02em;
+}

@@ -1,0 +1,103 @@
+:root {
+    --main-primary-color: white;
+    --main-secondary-color: orange;
+    --main-primary-bg-color: rgb(61, 71, 92);
+    --main-secondary-bg-color: rgb(0, 51, 153);
+    --main-teriatary-bg-color: rgba(255, 255, 255, 0.3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--main-primary-bg-color);
+    margin: 0;
+}
+
+main {
+    width: 80%;
+    margin: 0px auto;
+}
+
+head {
+    height: 6em;
+    position: top;
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em 0px;
+    color: var(--main-primary-color);
+    background-color: var(--main-secondary-bg-color);
+    border-bottom: 3px solid var(--main-secondary-color);
+}
+
+h4,
+.fa,
+.fab,
+.contact-bar-item,
+a {
+    color: var(--main-primary-color);
+    padding: 1em;
+    display: inline;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+
+/* displays contact information below haeder */
+
+.contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--main-teriatary-bg-color);
+    box-shadow: 0px 4px 16px var(--main-teriatary-bg-color);
+}
+
+
+/* contains all the CV items */
+
+.main-container-grid {
+    text-align: center;
+    position: initial;
+    width: 85%;
+    display: grid;
+    height: min-content;
+    gap: 2rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+
+/* contains CV sections */
+
+.main-container-items {
+    margin-top: 2em;
+    background-color: var(--main-teriatary-bg-color);
+    border-left: 2px solid var(--main-secondary-color);
+}
+
+.sub-container {
+    display: grid;
+    justify-content: center;
+    gap: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 80%));
+    width: fit-content;
+}
+
+.sub-container-item {
+    border-radius: 4px;
+    border-bottom: 2px solid var(--main-primary-color);
+    grid-template-columns: repeat(auto-fill, minmax(50px, 80%));
+}
+
+.skills-grid-item {
+    display: grid;
+}
