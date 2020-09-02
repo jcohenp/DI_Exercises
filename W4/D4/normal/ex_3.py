@@ -6,10 +6,15 @@
 # Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
 
 
-def make_shirt(size = "size", print_msg = "message"):
-    print(f"The shirt you are making is size {size} with the following message {print_msg}")
+def make_shirt(size = "L", **kwargs):
+    for k,v in kwargs.items():
+        if k == "print_msg":
+            print(f"The shirt you are making is size {size} with the following message:  {v}")
 
 def main():
-    make_shirt("L","Your Message Here")
+    make_shirt("M", print_msg="I love Python")
+    make_shirt(size="size", print_msg="I love Python")
+    make_shirt(size="S", print_msg="I feel like sleeping")  
+
 if __name__ == "__main__":
     main()
