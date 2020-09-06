@@ -8,8 +8,8 @@ class Zoo:
         In this class create a method __init__, that takes one parameter: zoo_name
         It i   nitializes two attributes: animals that is an empty list, name that is the name of the zoo.
         """
-        self.zoo_name: zoo_name
-        self.animals: animals
+        self.zoo_name = zoo_name
+        self.animals = animals
 
     def add_animal(self, new_animal):
         """
@@ -52,14 +52,14 @@ class Zoo:
         for animal in range(len(self.animals)+1):
             if list(animal):
                 for print_animal in animal:
-                    print(animal)
+                    print(print_animal)
 
 
 
 def main():
     animals_list = { 1: "Ape", 2: ["Baboon", "Bear"]}
     Safari = Zoo("Safari", animals_list)
-    Zoo.get_pen(Safari)
+    Safari.get_pen()
 
 if __name__ == '__main__':
     main()
