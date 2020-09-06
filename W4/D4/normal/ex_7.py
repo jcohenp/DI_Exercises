@@ -8,11 +8,13 @@ users = []
 
 def add_users(n):
     for iteration in range (n):
-        # language = ['German','French','Hebrew']
+        language = ['German','French','Hebrew']
         newUser = {}
         # language_spoken = fake.language(ext_word_list = language)
         newUser.update({"name": fake.name()})
         newUser.update({"address": fake.address()})
+        newUser.update({"address": fake.address()})
+        newUser.update({"language-spoken": fake.language(ext_word_list=language)})
         users.append(newUser)
 
 
