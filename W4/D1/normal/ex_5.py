@@ -6,7 +6,7 @@
 #>> 3 == 3
 # true4
 # print(3 == 3)
-#>>> 3 == "3"
+#>>> 3 == "3" # problem here when you compare digit with string => False
 #true
 # print(3 == "3")
 #>>> "3" > 3
